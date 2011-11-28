@@ -163,10 +163,14 @@ input::-moz-focus-inner button::-moz-focus-inner {
 /* Colors for form validity */
 input:valid textarea:valid,
 input:invalid textarea:invalid {
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
   border-radius: 1px;
   -moz-box-shadow: 0 0 5px #f00;
   -webkit-box-shadow: 0 0 5px #f00;
-  box-shadow: 0 0 5px #f00;
+  -moz-box-shadow: 0;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
 }
 .no-boxshadow input:invalid .no-boxshadow textarea:invalid {
   background-color: #f0dddd;
@@ -213,11 +217,134 @@ body {
   margin: 0 auto;
   width: 920px;
 }
+.canvas {
+  height: 380px;
+  margin: 0px auto 0;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  text-indent: -9999px;
+  width: 380px;
+  z-index: 10;
+}
+.icon,
+.icon * {
+  position: absolute;
+}
 #cruz-azul .cruz-azul1 {
   background-color: #2e3192;
-  height: 300px;
-  width: 300px;
+  height: 380px;
+  width: 380px;
+  -webkit-border-radius: 300px/300px;
+  -moz-border-radius: 300px/300px;
   border-radius: 300px/300px;
+}
+#cruz-azul .cruz-azul2 {
+  background-color: #fff;
+  -webkit-border-radius: 272px/272px;
+  -moz-border-radius: 272px/272px;
+  border-radius: 272px/272px;
+  height: 272px;
+  left: 54px;
+  top: 54px;
+  width: 272px;
+}
+#cruz-azul .cruz-azul3 {
+  background-color: #ef3125;
+  height: 152px;
+  left: 114px;
+  top: 114px;
+  width: 152px;
+}
+#cruz-azul .cruz-azul4 {
+  background-color: #fff;
+  -webkit-border-radius: 120px/120px;
+  -moz-border-radius: 120px/120px;
+  border-radius: 120px/120px;
+  height: 120px;
+  left: 130px;
+  top: 130px;
+  width: 120px;
+}
+#cruz-azul .cruz-azul5 {
+  background-color: #2e3192;
+  height: 100px;
+  left: 175px;
+  top: 140px;
+  width: 30px;
+}
+#cruz-azul .cruz-azul6 {
+  background-color: #2e3192;
+  height: 30px;
+  left: 140px;
+  top: 175px;
+  width: 100px;
+}
+#cruz-azul .cruz-azul7,
+#cruz-azul .cruz-azul8 {
+  color: #2e3192;
+  font-size: 26px;
+  font-weight: bold;
+  height: 18px;
+  left: 114px;
+  text-indent: 0;
+  width: 152px;
+}
+#cruz-azul .cruz-azul7 {
+  top: 81px;
+}
+#cruz-azul .cruz-azul8 {
+  top: 263px;
+}
+#cruz-azul .cruz-azul9 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 900;
+  height: 39px;
+  left: 116.5px;
+  text-indent: 0;
+  top: 316px;
+  width: 147px;
+}
+#cruz-azul .cruz-azul9 .m {
+  left: 0;
+  top: 0;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+#cruz-azul .cruz-azul9 .e {
+  left: 29px;
+  top: 6px;
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  transform: rotate(7deg);
+}
+#cruz-azul .cruz-azul9 .x {
+  left: 53px;
+  top: 8px;
+}
+#cruz-azul .cruz-azul9 .i {
+  left: 77px;
+  top: 8px;
+}
+#cruz-azul .cruz-azul9 .c {
+  left: 86px;
+  top: 7px;
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}
+#cruz-azul .cruz-azul9 .o {
+  left: 110px;
+  top: 0px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
 }
 /**
  * Non-semantic helper classes: please define your styles before this section.

@@ -33,7 +33,7 @@ app.configure('production', function(){
 app.get('/', routes.index);
 
 app.get('/cruz-azul', function(req, res){
-	res.render('index', {
+	res.render('cruz-azul', {
 		title: 'Cruz Azul'
 	});
 });

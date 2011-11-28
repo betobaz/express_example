@@ -1,3 +1,72 @@
+border-radius()
+  -webkit-border-radius arguments 
+  -moz-border-radius arguments 
+  border-radius arguments 
+
+border-top-radius() 
+  -webkit-border-top-left-radius arguments
+  -moz-border-top-left-radius arguments
+  border-top-left-radius arguments
+  -webkit-border-top-right-radius arguments
+  -moz-border-top-right-radius arguments
+  border-top-right-radius arguments
+
+border-bottom-radius() 
+  -webkit-border-bottom-left-radius arguments
+  -moz-border-bottom-left-radius arguments
+  border-bottom-left-radius arguments
+  -webkit-border-bottom-right-radius arguments
+  -moz-border-bottom-right-radius arguments
+  border-bottom-right-radius arguments
+
+linear-gradient(start_color, end_color, start = left top, end = left bottom)
+  mozstart = top if start = left top
+  background -moz-linear-gradient(mozstart, start_color 0%, end_color 100%)
+  background -webkit-gradient(linear, start, end, color-stop(0%, start_color), color-stop(100%, end_color))
+  -webkit-background-origin padding-box
+
+box-shadow(arguments) 
+  -moz-box-shadow arguments
+  -webkit-box-shadow arguments
+  box-shadow arguments
+
+box(orient, pack, align) 
+  display -webkit-box
+  -webkit-box-orient orient
+  -webkit-box-pack pack
+  -webkit-box-align align
+  -webkit-box-lines multiple
+
+  display -moz-box
+  -moz-box-orient orient
+  -moz-box-pack pack
+  -moz-box-align align
+  -moz-box-lines multiple
+
+  display box
+  box-orient orient
+  box-pack pack
+  box-align align
+  box-lines multiple
+
+box_flex()
+  -webkit-box-flex arguments
+  -moz-box-flex arguments
+  box-flex arguments
+
+transition()
+  -webkit-transition arguments
+  -moz-transition arguments
+  -o-transition arguments
+  transition arguments
+
+transform()
+  -webkit-transform arguments
+  -moz-transform arguments
+  -o-transform arguments
+  transform arguments
+
+
 /**
  * HTML5 ? Boilerplate
  *
@@ -218,13 +287,99 @@ body
 	color #c2c2c2
 	margin 0 auto
 	width 920px
-
+.canvas
+  height 380px
+  margin 0px auto 0
+  overflow hidden
+  position relative
+  top 0px
+  text-indent -9999px
+  width 380px
+  z-index 10
+.icon, .icon *
+  position absolute
 #cruz-azul
   .cruz-azul1
     background-color #2e3192
-    height 300px
-    width 300px
-    border-radius 300px/300px
+    height 380px
+    width 380px
+    border-radius(300px\/300px)
+  .cruz-azul2
+    background-color #ffffff
+    border-radius(272px\/272px)
+    height 272px
+    left (( 380px - 272px ) / 2)
+    top (( 380px - 272px ) / 2)
+    width 272px
+  .cruz-azul3
+    background-color #ef3125
+    height 152px
+    left (( 380px - 152px ) / 2)
+    top (( 380px - 152px ) / 2)
+    width 152px
+  .cruz-azul4
+    background-color #ffffff
+    border-radius(120px\/120px)
+    height 120px
+    left (( 380px - 120px ) / 2)
+    top (( 380px - 120px ) / 2)
+    width 120px
+  .cruz-azul5
+    background-color #2e3192
+    height 100px
+    left (( 380px - 30px ) / 2)
+    top (( 380px - 100px ) / 2)
+    width 30px
+  .cruz-azul6
+    background-color #2e3192
+    height 30px
+    left (( 380px - 100px ) / 2)
+    top (( 380px - 30px ) / 2)
+    width 100px
+  .cruz-azul7, .cruz-azul8
+    color #2e3192
+    font-size 26px
+    font-weight bold
+    height 18px
+    left (( 380px - 152px ) / 2)
+    text-indent 0
+    width 152px
+  .cruz-azul7
+    top 81px 
+  .cruz-azul8
+    top 263px
+  .cruz-azul9
+    color #ffffff
+    font-size 35px
+    font-weight 900
+    height 39px
+    left (( 380px - 147px ) / 2)
+    text-indent 0
+    top 316px
+    width 147px
+    .m
+      left 0
+      top 0
+      transform(rotate(20deg))
+    .e
+      left 32px
+      top 6px
+      transform(rotate(7deg))
+    .x
+      left 58px
+      top 8px
+    .i
+      left 82px
+      top 8px
+    .c
+      left 92px
+      top 7px
+      transform(rotate(-7deg))
+    .o
+      left 117px
+      top 0px
+      transform(rotate(-20deg))
+
 
 /**
  * Non-semantic helper classes: please define your styles before this section.
