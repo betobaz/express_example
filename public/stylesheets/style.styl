@@ -303,7 +303,7 @@ body
     background-color #2e3192
     height 380px
     width 380px
-    border-radius(300px\/300px)
+    border-radius(380px\/380px)
   .cruz-azul2
     background-color #ffffff
     border-radius(272px\/272px)
@@ -379,6 +379,46 @@ body
       left 117px
       top 0px
       transform(rotate(-20deg))
+  .estrella
+    width 100px
+    div      
+      position relative
+      margin 60px auto
+      display block
+      color red
+      width 0px
+      height 0px
+      border-right 8px solid transparent
+      border-bottom 18px solid red
+      border-left 5px solid transparent
+    div:before
+      border-bottom 18px solid red
+      border-left 20px solid transparent
+      border-right 20px solid transparent
+      position absolute
+      height 0
+      width 0
+      top -143px
+      left -19px
+      display block
+      content ''
+      transform (rotate(-35deg))
+    div:after        
+      position absolute
+      display block
+      color red
+      top 3px
+      left -105px
+      width 0px
+      height 0px
+      border-right 8px solid transparent
+      border-bottom 18px solid red
+      border-left 8px solid transparent
+      transform(rotate(-70deg))
+      content: ''
+      
+      
+      
 
 
 /**
