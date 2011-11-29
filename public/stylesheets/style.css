@@ -347,51 +347,41 @@ body {
   transform: rotate(-20deg);
 }
 #cruz-azul .estrella {
-  width: 100px;
-}
-#cruz-azul .estrella div {
-  position: relative;
-  margin: 60px auto;
+  border-right: 7px solid transparent;
+  border-bottom: 16px solid #fff;
+  border-left: 7px solid transparent;
   display: block;
-  color: #f00;
-  width: 0px;
-  height: 0px;
-  border-right: 8px solid transparent;
-  border-bottom: 18px solid #f00;
-  border-left: 5px solid transparent;
-}
-#cruz-azul .estrella div:before {
-  border-bottom: 18px solid #f00;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  position: absolute;
   height: 0;
+  position: relative;
+  top: 33px;
+  left: 100px;
   width: 0;
-  top: -143px;
-  left: -19px;
-  display: block;
+}
+#cruz-azul .estrella:before {
+  border-bottom: 16px solid #fff;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  position: absolute;
+  top: 13px;
+  left: -22px;
+  content: '';
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+#cruz-azul .estrella:after {
+  border-bottom: 16px solid #fff;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  position: absolute;
+  top: 13px;
+  left: -24px;
   content: '';
   -webkit-transform: rotate(-35deg);
   -moz-transform: rotate(-35deg);
   -o-transform: rotate(-35deg);
   transform: rotate(-35deg);
-}
-#cruz-azul .estrella div:after {
-  position: absolute;
-  display: block;
-  color: #f00;
-  top: 3px;
-  left: -105px;
-  width: 0px;
-  height: 0px;
-  border-right: 8px solid transparent;
-  border-bottom: 18px solid #f00;
-  border-left: 8px solid transparent;
-  -webkit-transform: rotate(-70deg);
-  -moz-transform: rotate(-70deg);
-  -o-transform: rotate(-70deg);
-  transform: rotate(-70deg);
-  content: '';
 }
 /**
  * Non-semantic helper classes: please define your styles before this section.
