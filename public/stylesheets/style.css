@@ -348,19 +348,18 @@ body {
 }
 #cruz-azul .estrella {
   border-right: 7px solid transparent;
-  border-bottom: 16px solid #fff;
+  border-bottom: 21px solid #fff;
   border-left: 7px solid transparent;
   display: block;
   height: 0;
-  position: relative;
   top: 33px;
   left: 100px;
   width: 0;
 }
 #cruz-azul .estrella:before {
   border-bottom: 16px solid #fff;
-  border-left: 24px solid transparent;
-  border-right: 24px solid transparent;
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;
   position: absolute;
   top: 13px;
   left: -22px;
@@ -372,8 +371,8 @@ body {
 }
 #cruz-azul .estrella:after {
   border-bottom: 16px solid #fff;
-  border-left: 24px solid transparent;
-  border-right: 24px solid transparent;
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;
   position: absolute;
   top: 13px;
   left: -23px;
@@ -382,6 +381,70 @@ body {
   -moz-transform: rotate(-35deg);
   -o-transform: rotate(-35deg);
   transform: rotate(-35deg);
+}
+#cruz-azul .cruz-azul10 {
+  left: 44px;
+  top: 91px;
+  -webkit-transform: rotate(9deg);
+  -moz-transform: rotate(9deg);
+  -o-transform: rotate(9deg);
+  transform: rotate(9deg);
+}
+#cruz-azul .cruz-azul11 {
+  left: 76px;
+  top: 53px;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
+}
+#cruz-azul .cruz-azul12 {
+  left: 119px;
+  top: 24px;
+  -webkit-transform: rotate(43deg);
+  -moz-transform: rotate(43deg);
+  -o-transform: rotate(43deg);
+  transform: rotate(43deg);
+}
+#cruz-azul .cruz-azul13 {
+  left: 171px;
+  top: 16px;
+  -webkit-transform: rotate(68deg);
+  -moz-transform: rotate(68deg);
+  -o-transform: rotate(68deg);
+  transform: rotate(68deg);
+}
+#cruz-azul .cruz-azul14 {
+  left: 198px;
+  top: 16px;
+  -webkit-transform: rotate(-61deg);
+  -moz-transform: rotate(-61deg);
+  -o-transform: rotate(-61deg);
+  transform: rotate(-61deg);
+}
+#cruz-azul .cruz-azul15 {
+  left: 250px;
+  top: 27px;
+  -webkit-transform: rotate(-43deg);
+  -moz-transform: rotate(-43deg);
+  -o-transform: rotate(-43deg);
+  transform: rotate(-43deg);
+}
+#cruz-azul .cruz-azul16 {
+  left: 289px;
+  top: 53px;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+}
+#cruz-azul .cruz-azul17 {
+  left: 321px;
+  top: 91px;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -o-transform: rotate(-9deg);
+  transform: rotate(-9deg);
 }
 /**
  * Non-semantic helper classes: please define your styles before this section.
