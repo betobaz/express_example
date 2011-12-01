@@ -5,17 +5,26 @@
 
 var express = require('express')
   , routes = require('./routes')
+  , stylus = require('stylus')
 
 var app = module.exports = express.createServer();
 
 // Configuration
+
+function compile(str, path){
+  return stylus(str)
+    .import(__dirname + '/public/stylesheets/cruz-azul')
+    .set('filename', path)
+    .set('warn', true)
+    .set('compress', true);
+};
 
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.bodyParser());
   app.use(express.methodOverride());
-  app.use(require('stylus').middleware({ src: __dirname + '/public' }));
+  app.use(require('stylus').middleware({ src: __dirname + '/public', compile: compile }));
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
 });
