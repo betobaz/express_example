@@ -5,7 +5,9 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , stylus = require('stylus')
+  , stylus = require('stylus');
+
+var SucursalProvider = require('./sucursalprovider-memory').SucursalProvider;
 
 var app = module.exports = express.createServer();
 
@@ -13,7 +15,7 @@ var app = module.exports = express.createServer();
 
 function compile(str, path){
   return stylus(str)
-    .import(__dirname + '/public/stylesheets/cruz-azul')
+    //.import(__dirname + '/public/stylesheets/cruz-azul')
     .set('filename', path)
     .set('warn', true)
     .set('compress', true);
@@ -41,9 +43,29 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 
+var sucursalProvider = new SucursalProvider();
+
 app.get('/cruz-azul', function(req, res){
 	res.render('cruz-azul', {
 		title: 'Cruz Azul'
+	});
+});
+
+app.get('/sucursal', function(req, res){
+	sucursalProvider.findAll(function(error, docs){
+
+
+
+
+
+
+
+
+		res.render('sucursal/index',{
+			title: 'Sucursales',
+			sucursales: docs
+		});	
+
 	});
 });
 
