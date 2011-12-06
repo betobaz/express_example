@@ -36,38 +36,17 @@ body select input textarea{color:#444;}
 ::-moz-selection{background:#fe57a1;color:#fff;text-shadow:none}
 ::selection{background:#fe57a1;color:#fff;text-shadow:none}
 a:link{-webkit-tap-highlight-color:#ff5e99;}
-body{background-color:#000;font:62.5%/1.5 Helvetica,Arial,"Lucida Grande","Lucida Sans",Tahoma,Verdana,sans-serif}
+body background-color #000{font:62.5%/1.5 Helvetica,Arial,"Lucida Grande","Lucida Sans",Tahoma,Verdana,sans-serif}
+h1,h2{margin:0;font-size:22px;color:#343434}
+h1{text-shadow:1px 2px 2px #ddd}
 #main{padding:10px}
-#container{background-color:#fff;color:#c2c2c2;margin:0 auto;width:920px}
-.canvas{height:380px;margin:0 auto 0;overflow:hidden;position:relative;top:0;text-indent:-9999px;width:380px;z-index:10}
-.icon,.icon *{position:absolute}
-#cruz-azul .cruz-azul1{background-color:#2e3192;height:380px;width:380px;-webkit-border-radius:380px/380px;-moz-border-radius:380px/380px;border-radius:380px/380px}
-#cruz-azul .cruz-azul2{background-color:#fff;-webkit-border-radius:272px/272px;-moz-border-radius:272px/272px;border-radius:272px/272px;height:272px;left:54px;top:54px;width:272px}
-#cruz-azul .cruz-azul3{background-color:#ef3125;height:152px;left:114px;top:114px;width:152px}
-#cruz-azul .cruz-azul4{background-color:#fff;-webkit-border-radius:120px/120px;-moz-border-radius:120px/120px;border-radius:120px/120px;height:120px;left:130px;top:130px;width:120px}
-#cruz-azul .cruz-azul5{background-color:#2e3192;height:100px;left:175px;top:140px;width:30px}
-#cruz-azul .cruz-azul6{background-color:#2e3192;height:30px;left:140px;top:175px;width:100px}
-#cruz-azul .cruz-azul7,#cruz-azul .cruz-azul8{color:#2e3192;font-size:26px;font-weight:bold;height:18px;left:114px;text-indent:0;width:152px}
-#cruz-azul .cruz-azul7{top:81px}
-#cruz-azul .cruz-azul8{top:263px}
-#cruz-azul .cruz-azul9{color:#fff;font-size:35px;font-weight:900;height:39px;left:116.5px;text-indent:0;top:316px;width:147px;}
-#cruz-azul .cruz-azul9 .m{left:0;top:0;-webkit-transform:rotate(20deg);-moz-transform:rotate(20deg);-o-transform:rotate(20deg);transform:rotate(20deg)}
-#cruz-azul .cruz-azul9 .e{left:32px;top:6px;-webkit-transform:rotate(7deg);-moz-transform:rotate(7deg);-o-transform:rotate(7deg);transform:rotate(7deg)}
-#cruz-azul .cruz-azul9 .x{left:58px;top:8px}
-#cruz-azul .cruz-azul9 .i{left:82px;top:8px}
-#cruz-azul .cruz-azul9 .c{left:92px;top:7px;-webkit-transform:rotate(-7deg);-moz-transform:rotate(-7deg);-o-transform:rotate(-7deg);transform:rotate(-7deg)}
-#cruz-azul .cruz-azul9 .o{left:117px;top:0;-webkit-transform:rotate(-20deg);-moz-transform:rotate(-20deg);-o-transform:rotate(-20deg);transform:rotate(-20deg)}
-#cruz-azul .estrella{border-right:7px solid transparent;border-bottom:21px solid #fff;border-left:7px solid transparent;display:block;height:0;top:33px;left:100px;width:0}
-#cruz-azul .estrella:before{border-bottom:16px solid #fff;border-left:23px solid transparent;border-right:23px solid transparent;position:absolute;top:13px;left:-22px;content:'';-webkit-transform:rotate(35deg);-moz-transform:rotate(35deg);-o-transform:rotate(35deg);transform:rotate(35deg)}
-#cruz-azul .estrella:after{border-bottom:16px solid #fff;border-left:23px solid transparent;border-right:23px solid transparent;position:absolute;top:13px;left:-23px;content:'';-webkit-transform:rotate(-35deg);-moz-transform:rotate(-35deg);-o-transform:rotate(-35deg);transform:rotate(-35deg)}
-#cruz-azul .cruz-azul10{left:44px;top:91px;-webkit-transform:rotate(9deg);-moz-transform:rotate(9deg);-o-transform:rotate(9deg);transform:rotate(9deg)}
-#cruz-azul .cruz-azul11{left:76px;top:53px;-webkit-transform:rotate(25deg);-moz-transform:rotate(25deg);-o-transform:rotate(25deg);transform:rotate(25deg)}
-#cruz-azul .cruz-azul12{left:119px;top:24px;-webkit-transform:rotate(43deg);-moz-transform:rotate(43deg);-o-transform:rotate(43deg);transform:rotate(43deg)}
-#cruz-azul .cruz-azul13{left:171px;top:16px;-webkit-transform:rotate(68deg);-moz-transform:rotate(68deg);-o-transform:rotate(68deg);transform:rotate(68deg)}
-#cruz-azul .cruz-azul14{left:198px;top:16px;-webkit-transform:rotate(-61deg);-moz-transform:rotate(-61deg);-o-transform:rotate(-61deg);transform:rotate(-61deg)}
-#cruz-azul .cruz-azul15{left:250px;top:27px;-webkit-transform:rotate(-43deg);-moz-transform:rotate(-43deg);-o-transform:rotate(-43deg);transform:rotate(-43deg)}
-#cruz-azul .cruz-azul16{left:289px;top:53px;-webkit-transform:rotate(-25deg);-moz-transform:rotate(-25deg);-o-transform:rotate(-25deg);transform:rotate(-25deg)}
-#cruz-azul .cruz-azul17{left:321px;top:91px;-webkit-transform:rotate(-9deg);-moz-transform:rotate(-9deg);-o-transform:rotate(-9deg);transform:rotate(-9deg)}
+#container{background-color:#fff;color:#c2c2c2;}
+#container margin 0auto{width:920px}
+#sucursales{text-align:left;margin-left:auto;margin-right:auto;}
+#sucursales width 320px .sucursal{margin:20px;}
+#sucursales width 320px .sucursal .created_at{display:none}
+#sucursales width 320px .sucursal .title{font-weight:bold;text-decoration:underline;background-color:#eee}
+#sucursales width 320px .sucursal .body{background-color:#ffa}
 .ir{display:block;text-indent:-999em;overflow:hidden;background-repeat:no-repeat;text-align:left;direction:ltr}
 .ir br{display:none}
 .hidden{display:none;visibility:hidden}

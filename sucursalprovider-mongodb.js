@@ -1,11 +1,12 @@
-var Db = require('mongodb').Db;
-var Connection = require('mongodb').Connection;
-var Server = require('mongodb').server
-var BSON = require('mongodb').BSON
-var ObjectID = require('mongodb').ObjectID;
+var Mongodb = require('mongodb');
+var Db = Mongodb.Db;
+var Connection = Mongodb.Connection;
+var Server = Mongodb.Server
+var BSON = Mongodb.BSON
+var ObjectID = Mongodb.ObjectID;
 
 SucursalProvider = function(host, port){
-	this.db = new Db('ComRap', new Server(host, port, {auto_reconnect: true}, {}));
+	this.db = new Db('ComRap',new Server(host, port, {auto_reconnect: true}, {}));
 	this.db.open(function(){});
 };
 
@@ -52,8 +53,9 @@ SucursalProvider.prototype.save = function(sucursales, callback){
 			}
 
 			sucursal_collection.insert(sucursales, function(){
-				callback(null, articles);
+				callback(null, sucursales);
 			});
 		}
 	});
 };
+exports.SucursalProvider = SucursalProvider;
