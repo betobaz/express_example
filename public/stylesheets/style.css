@@ -57,7 +57,7 @@ body{background-color:#000;font:62.5%/1.5 Helvetica,Arial,"Lucida Grande","Lucid
 #cruz-azul .cruz-azul9 .i{left:82px;top:8px}
 #cruz-azul .cruz-azul9 .c{left:92px;top:7px;-webkit-transform:rotate(-7deg);-moz-transform:rotate(-7deg);-o-transform:rotate(-7deg);transform:rotate(-7deg)}
 #cruz-azul .cruz-azul9 .o{left:117px;top:0;-webkit-transform:rotate(-20deg);-moz-transform:rotate(-20deg);-o-transform:rotate(-20deg);transform:rotate(-20deg)}
-#cruz-azul .estrella{border-right:7px solid transparent;border-bottom:21px solid #fff;border-left:7px solid transparent;display:block;height:0;top:33px;left:100px;width:0}
+#cruz-azul .estrella{border-right:7px solid transparent;border-bottom:21px solid #fff;border-left:7px solid transparent;display:block;height:0;top:33px;left:100px;width:0;}
 #cruz-azul .estrella:before{border-bottom:16px solid #fff;border-left:23px solid transparent;border-right:23px solid transparent;position:absolute;top:13px;left:-22px;content:'';-webkit-transform:rotate(35deg);-moz-transform:rotate(35deg);-o-transform:rotate(35deg);transform:rotate(35deg)}
 #cruz-azul .estrella:after{border-bottom:16px solid #fff;border-left:23px solid transparent;border-right:23px solid transparent;position:absolute;top:13px;left:-23px;content:'';-webkit-transform:rotate(-35deg);-moz-transform:rotate(-35deg);-o-transform:rotate(-35deg);transform:rotate(-35deg)}
 #cruz-azul .cruz-azul10{left:44px;top:91px;-webkit-transform:rotate(9deg);-moz-transform:rotate(9deg);-o-transform:rotate(9deg);transform:rotate(9deg)}

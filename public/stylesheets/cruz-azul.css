@@ -1,0 +1,29 @@
+.canvas{height:380px;margin:0 auto 0;overflow:hidden;position:relative;top:0;text-indent:-9999px;width:380px;z-index:10}
+.icon,.icon *{position:absolute}
+#cruz-azul .cruz-azul1{background-color:#2e3192;height:380px;width:380px;}
+#cruz-azul .cruz-azul2{background-color:#fff;height:272px;left:54px;top:54px;width:272px}
+#cruz-azul .cruz-azul3{background-color:#ef3125;height:152px;left:114px;top:114px;width:152px}
+#cruz-azul .cruz-azul4{background-color:#fff;height:120px;left:130px;top:130px;width:120px}
+#cruz-azul .cruz-azul5{background-color:#2e3192;height:100px;left:175px;top:140px;width:30px}
+#cruz-azul .cruz-azul6{background-color:#2e3192;height:30px;left:140px;top:175px;width:100px}
+#cruz-azul .cruz-azul7,#cruz-azul .cruz-azul8{color:#2e3192;font-size:26px;font-weight:bold;height:18px;left:114px;text-indent:0;width:152px}
+#cruz-azul .cruz-azul7{top:81px}
+#cruz-azul .cruz-azul8{top:263px}
+#cruz-azul .cruz-azul9{color:#fff;font-size:35px;font-weight:900;height:39px;left:116.5px;text-indent:0;top:316px;width:147px;}
+#cruz-azul .cruz-azul9 .m{left:0;top:0;}
+#cruz-azul .cruz-azul9 .e{left:32px;top:6px;}
+#cruz-azul .cruz-azul9 .x{left:58px;top:8px}
+#cruz-azul .cruz-azul9 .i{left:82px;top:8px}
+#cruz-azul .cruz-azul9 .c{left:92px;top:7px;}
+#cruz-azul .cruz-azul9 .o{left:117px;top:0;}
+#cruz-azul .estrella{border-right:7px solid transparent;border-bottom:21px solid #fff;border-left:7px solid transparent;display:block;height:0;top:33px;left:100px;width:0}
+#cruz-azul .estrella:before{border-bottom:16px solid #fff;border-left:23px solid transparent;border-right:23px solid transparent;position:absolute;top:13px;left:-22px;content:'';}
+#cruz-azul .estrella:after{border-bottom:16px solid #fff;border-left:23px solid transparent;border-right:23px solid transparent;position:absolute;top:13px;left:-23px;content:'';}
+#cruz-azul .cruz-azul10{left:44px;top:91px;}
+#cruz-azul .cruz-azul11{left:76px;top:53px;}
+#cruz-azul .cruz-azul12{left:119px;top:24px;}
+#cruz-azul .cruz-azul13{left:171px;top:16px;}
+#cruz-azul .cruz-azul14{left:198px;top:16px;}
+#cruz-azul .cruz-azul15{left:250px;top:27px;}
+#cruz-azul .cruz-azul16{left:289px;top:53px;}
+#cruz-azul .cruz-azul17{left:321px;top:91px;}
