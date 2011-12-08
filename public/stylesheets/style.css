@@ -36,9 +36,17 @@ body select input textarea{color:#444;}
 ::-moz-selection{background:#fe57a1;color:#fff;text-shadow:none}
 ::selection{background:#fe57a1;color:#fff;text-shadow:none}
 a:link{-webkit-tap-highlight-color:#ff5e99;}
-body{background-color:#000;font:62.5%/1.5 Helvetica,Arial,"Lucida Grande","Lucida Sans",Tahoma,Verdana,sans-serif}
+body background-color #000{font:62.5%/1.5 Helvetica,Arial,"Lucida Grande","Lucida Sans",Tahoma,Verdana,sans-serif}
+h1,h2{margin:0;font-size:22px;color:#343434}
+h1{text-shadow:1px 2px 2px #ddd}
 #main{padding:10px}
-#container{background-color:#fff;color:#c2c2c2;margin:0 auto;width:920px}
+#container{background-color:#fff;color:#c2c2c2;}
+#container margin 0auto{width:920px}
+#sucursales{text-align:left;margin-left:auto;margin-right:auto;}
+#sucursales width 320px .sucursal{margin:20px;}
+#sucursales width 320px .sucursal .created_at{display:none}
+#sucursales width 320px .sucursal .title{font-weight:bold;text-decoration:underline;background-color:#eee}
+#sucursales width 320px .sucursal .body{background-color:#ffa}
 .canvas{height:380px;margin:0 auto 0;overflow:hidden;position:relative;top:0;text-indent:-9999px;width:380px;z-index:10}
 .icon,.icon *{position:absolute}
 #cruz-azul .cruz-azul1{background-color:#2e3192;height:380px;width:380px;-webkit-border-radius:380px/380px;-moz-border-radius:380px/380px;border-radius:380px/380px}

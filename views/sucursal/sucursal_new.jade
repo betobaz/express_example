@@ -1,0 +1,14 @@
+h1= title
+form( method="post" )
+  section
+    section
+      span Numero:
+      input( type="text", name="numero", id="editSucursalNumero" )
+    section
+      span Direccion:
+      textarea( name="direccion", rows=20, id="editSucursalDireccion")
+    section
+      span Telefono:
+      input( name="telefono", rows=20, id="editSucursalTelefono")
+    section#editSucursalSubmit
+      input( type="submit", value="Send")

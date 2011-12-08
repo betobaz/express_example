@@ -1,0 +1,9 @@
+h2= title
+#sucursales
+	- each sucursal in sucursales
+		section.sucursal
+			section.created_at= sucursal.created_at
+			section.title
+				a(href="/sucursal/"+sucursal._id)!= sucursal.numero
+			div.body= sucursal.direccion
+			div.telefono= sucursal.telefono

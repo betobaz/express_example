@@ -7,8 +7,7 @@ var express = require('express')
   , routes = require('./routes')
   , stylus = require('stylus');
 
-//var SucursalProvider = require('./sucursalprovider-memory').SucursalProvider;
-var SucursalProvider = require('./sucursalprovider-mongodb').SucursalProvider;
+var SucursalProvider = require('./sucursalprovider-memory').SucursalProvider;
 
 var app = module.exports = express.createServer();
 
@@ -40,14 +39,11 @@ app.configure('production', function(){
   app.use(express.errorHandler()); 
 });
 
-console.log('hola, esto trae sucursalprovider:', SucursalProvider);
-
-var sucursalProvider = new SucursalProvider('localhost', 27017);
-
 // Routes
 
 app.get('/', routes.index);
 
+var sucursalProvider = new SucursalProvider();
 
 app.get('/cruz-azul', function(req, res){
 	res.render('cruz-azul', {
@@ -57,6 +53,14 @@ app.get('/cruz-azul', function(req, res){
 
 app.get('/sucursal', function(req, res){
 	sucursalProvider.findAll(function(error, docs){
+
+
+
+
+
+
+
+
 		res.render('sucursal/index',{
 			title: 'Sucursales',
 			sucursales: docs
@@ -81,18 +85,7 @@ app.post('/sucursal/new', function(req, res){
 	}, function(error, docs){
 		res.redirect('/sucursal/');
 	});
-});
-
-app.get('/sucursal/:id', function(){
-	sucursalProvider.findById(req.params.id, function(error, sucursal){
-		res.render('sucursal/sucursal_show',{
-			locals: {
-				numero: sucursal.numero,
-				direccion: sucursal.direccion
-			}
-		});
-	});
-});
+})
 
 app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
